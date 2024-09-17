@@ -18,13 +18,13 @@ public class Seller implements Serializable{
     public Seller() {
     }
 
-    public Seller(Integer id, String name, String email, Date birthDate, Double baseSalary, Department departement) {
+    public Seller(Integer id, String name, String email, Date birthDate, Double baseSalary, Department department) {
         this.id = id;
         this.name = name;
         this.email = email;
         this.birthDate = birthDate;
         this.baseSalary = baseSalary;
-        this.departement = departement;
+        this.departement = department;
     }
     
     public Integer getId() {
@@ -67,6 +67,14 @@ public class Seller implements Serializable{
         this.baseSalary = baseSalary;
     }
 
+    public Department getDepartement() {
+        return departement;
+    }
+
+    public void setDepartement(Department departement) {
+        this.departement = departement;
+    }
+    
     @Override
     public int hashCode() {
         int hash = 3;
