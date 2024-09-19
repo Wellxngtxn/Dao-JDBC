@@ -234,5 +234,4 @@ public class SellerDaoJDBC implements SellerDao {
             DB.closeResultSet(rs);
         }
     }
-
 }
